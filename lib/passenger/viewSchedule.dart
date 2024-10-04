@@ -40,7 +40,7 @@ class _PassengerScheduleScreenState extends State<PassengerScheduleScreen> {
                 const SizedBox(
                   height: 20,
                 ),
-                const Column(
+                Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(

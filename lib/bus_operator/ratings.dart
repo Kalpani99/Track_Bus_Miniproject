@@ -23,7 +23,7 @@ class _RatingScreenState extends State<RatingScreen> {
           actions: const []),
       body: ListView(
         shrinkWrap: true,
-        children: const [
+        children:  [
           Padding(
             padding: EdgeInsets.symmetric(
                 horizontal: 45.0), // Reduce horizontal padding

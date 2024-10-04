@@ -80,7 +80,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: const Center(
+              child: Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -96,7 +96,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
                 ),
               ),
             ),
-            const Positioned(
+            Positioned(
               bottom: 40,
               left: 0,
               right: 0,

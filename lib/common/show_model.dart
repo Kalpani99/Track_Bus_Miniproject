@@ -11,7 +11,7 @@ class AddNewTaskModel extends StatefulWidget {
   final String arrTimeTask;
   final String deptTimeTask;
   final String dateTask;
-  late final String documentId;
+  final String documentId;
 
   const AddNewTaskModel(
       {super.key, this.fromWhere = '',

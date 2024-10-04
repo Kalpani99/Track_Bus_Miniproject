@@ -104,8 +104,10 @@ class _ProfileTypeScreenState extends State<ProfileTypeScreen> {
                                           data.profileImageURL!.isNotEmpty
                                       ? NetworkImage(data.profileImageURL!)
                                       : const AssetImage(
-                                              'assets/images/placeholder_image.png'))
-                                  : FileImage(imageXFile!),
+                                              'assets/images/placeholder_image.png')
+                                          as ImageProvider<Object>)
+                                  : FileImage(imageXFile!)
+                                      as ImageProvider<Object>,
                             ),
                           ),
                         ),
@@ -292,7 +294,8 @@ class _ProfileTypeScreenState extends State<ProfileTypeScreen> {
                                             const BusOperatorProfileEditScreen()));
                               },
                               style: ElevatedButton.styleFrom(
-                                foregroundColor: Colors.white, backgroundColor: Colors.deepPurple,
+                                foregroundColor: Colors.white,
+                                backgroundColor: Colors.deepPurple,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(14),
                                 ),
